@@ -1,0 +1,68 @@
+h1,
+h2,
+h4 {
+  text-align: center;
+}
+
+body {
+  background-color: #000000;
+  color: #a7a1ae;
+}
+
+.navbar {
+  background-color: #0b1736;
+}
+
+.img1 {
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+
+.img2 {
+  float: left;
+  margin: 7px 7px 7px 0;
+}
+
+.price {
+  font-size: 35px;
+}
+
+.Zagolovok {
+  font-size: 25px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.imgKat {
+  float: right;
+}
+
+.nav-item {
+  margin-right: 2%;
+  color: #fff842;
+}
+
+.nav-link {
+  color: #fff842;
+}
+
+.nav-link:hover {
+  color: #fff842;
+}
+
+.btn {
+  color: #a7a1ae;
+}
+
+.wind {
+  background-color: #0b1736;
+}
+
+.bodyCatalog {
+  background-color: #0c1f4e;
+}

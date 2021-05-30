@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Ноутюуки, мониторы, наушники, магазин">
+    <meta name="description" content="Магазин техники">
+
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="OpenCatalog.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mainCSS.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#!">eShop.ru</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0 w-100 justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="ShowCatalog()">Каталог</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html" onclick="ShowKorz()">Корзина</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+              
+              
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark hide" id="Catalog">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#!">Navbar</a> -->
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0 w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html #Zagolovok1">Ноутбуки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html #Zagolovok5">Наушники</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html #Zagolovok3">Мониторы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html #Zagolovok7">Клавиатуры</a>
+              </li>
+              
+              
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="text-left">Закажите прямо сейчас!</h1>
+        <img src="main1.jpg" alt="" width="50%" class="img2 rounded">
+        <p> <br> Оцените мощную производительность этого устройства благодаря процессору Intel® Core™ i7 11-го поколения1, графическим процессорам GeForce RTX™ серии 301 и дисплею с разрешением FHD/QHD и высокой частотой обновления. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p> 
+        <img src="main2.jpg" alt="" width="49%" class="img1 rounded">
+        <p>Доминируйте в играх благодаря сочетанию мощного процессора Intel® Core™ i7 11-го поколения1 и графических процессоров NVIDIA® GeForce RTX™ серии 30. Максимальная скорость и огромный объем памяти благодаря двум разъемам для твердотельных накопителей M.2 PCIe/SATA1 и поддержке до 32 ГБ ОЗУ DDR4 3200.<br> <br> <br> <br> <br></p>
+        <img src="main3.jpg" alt="" width="50%" class="img2 rounded">
+        <p> <br> Новейшие процессоры Intel созданы для расширения границ возможного и путешествий с комфортом. Теперь они поддерживают частоту до 5,0 ГГц3 в режиме Turbo благодаря 4 ядрам и 8 потокам, обеспечивая всю необходимую производительность и позволяя играть, где бы вы ни находились.<br> <br> <br> <br> <br> <br> <br> <br></p>
+        
+        <img src="main4.jpg" alt="" width="50%" class="img1 rounded">
+        <p><b>Графические процессоры NVIDIA® GeForce RTX™ серии 30 <br></b> 
+          Эти графические процессоры обеспечивают безупречную производительность для геймеров и создателей контента. В основе их работы лежит Ampere — архитектура RTX 2-го поколения от компании NVIDIA с новыми ядрами трассировки лучей, тензорными ядрами и потоковыми мультипроцессорами, которые обеспечивают прирост производительности.<br> <br> <br> <br> <br> <br> <br> <br></p>
+        
+          <img src="main5.jpg" alt="" width="50%" class="img2 rounded">
+        <p><b>Насыщенность и четкость изображения <br></b>
+          Выберите то, что подходит именно вам: мощная динамика FHD с частотой обновления до 144 Гц1 или высокая детализация QHD с частотой обновления 165 Гц1. Время отклика 3 мс с функцией Overdrive2 — это скорость и плавность отображения без эффекта двоения и разрывов.<br> <br> <br> <br> <br> <br> <br> <br></p>
+        
+          <img src="main6.jpg" alt="" width="50%" class="img1 rounded">
+          <p><b>Мощной технике — мощное охлаждение <br></b>
+            2 вентилятора, технология Acer CoolBoost™ и 4 вентиляционных отверстия помогут быстро охладить устройство при интенсивной работе. CoolBoost™ повышает скорость вентилятора на 10% и улучшает охлаждение ЦП и видеокарты на 9% (сравнение с авторежимом). Используйте NitroSense, чтобы настроить температуру, скорость вентиляторов и другие параметры.<br> <br> <br> <br> <br> <br> <br> <br></p>
+        
+            <img src="main7.jpg" alt="" width="50%" class="img2 rounded">
+            <p><b><br><br> Победа в ваших руках <br></b>
+              4-зонная RGB-подсветка клавиатуры1 добавляет яркости, а клавиша NitroSense обеспечивает быстрый доступ к настройкам ноутбука. Продуманная подсветка WASD и клавиш стрелок повышает видимость, а глубина нажатия 1,6 мм гарантирует минимальное время отклика.<br> <br> <br> <br> <br> <br> <br> <br></p>
+        
+              <img src="main8.jpg" alt="" width="50%" class="img1 rounded">
+        <p><b>Сверхмощный звук <br></b>
+          Благодаря двум динамикам 2 Вт и качественному звуку вы можете полностью погрузиться в игру и одерживать победу за победой. Технология DTS:X® Ultra обеспечивает непревзойденное качество звука в трехмерном пространстве, чтобы вы точно слышали, с какой стороны приближается противник.</p>
+        
+        <a class="btn bg-dark" href="catalog.html" role="button">Купить сейчас</a>
+        
+       
+        
+      </div>
+</body>
+</html>

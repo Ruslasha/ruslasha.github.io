@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <script src="btnBuy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="OpenCatalog.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="mainCSS.css">
+    <link rel="stylesheet" href="korzinaBTN.css">
+    
+    <title>Document</title>
+</head>
+<body class="bodyCatalog">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#!">eShop.ru</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0 w-100 justify-content-center">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="ShowCatalog()">Каталог</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="ShowKorz()">Корзина</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+              
+              
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark hide" id="Catalog">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#!">Navbar</a> -->
+      
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0 w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html #Zagolovok1">Ноутбуки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html #Zagolovok5">Наушники</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html #Zagolovok3">Мониторы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html #Zagolovok7">Клавиатуры</a>
+              </li>
+              
+              
+          </ul>
+        </div>
+      </nav>
+      
+      
+      
+    <div class="container-fluid">
+
+      <div class="shadow-sm p-2 mb-3 rounded hide" id="korzina">
+        <h4 id="tylp1" class="text-left">Корзина</h4>
+        <p id="korz" class="korz">Товаров корзине нет <br> </p> 
+        <!-- <p id="SumAll">Общая сумма: </p> -->
+
+      </div>
+      <div class="hide" id="summa">
+        <a class="btn bg-dark" href="#" role="button" onclick="ShowOrder()">Перейти к оформлению</a>
+      </div>
+      
+      <div class="hide" id="order">
+        <form>
+          <p id="SumAll">Общая сумма: </p>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Адрес</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Введите адрес">
+          </div>
+        </form> 
+        <a class="btn bg-dark" href="#" role="button">Заказать</a>
+
+        <div class="alert alert-success hide" role="alert" id="orderAlert">
+          <strong>Готово!</strong> Вы успешно заказали цветы.
+        </div>
+      </div>
+      
+    <div id="katAll" class="">
+        <br>
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok1">Ноутбук Acer Nitro 5 AN517-53-52NB</p>
+            <img src="kat1.jpg" alt="" width="17%" class="imgKat rounded">
+           
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Диагональ экрана в дюймах: 15.6 "</p>
+            <p>Разрешение экрана
+                1920х1080</p>
+                <p>Тип матрицы
+                    IPS</p>
+            <p>Процессор
+                AMD Ryzen 5 4600H</p> <img src="kat2.jpg" alt="" width="17%" class="imgKat rounded">
+            <p>Процессор, частота
+                3.0 ГГц (4.0 ГГц, в режиме Turbo)</p>
+            <p>Оперативная память
+                8192 Мб, DDR4</p>
+            <p>Графический процессор
+                NVIDIA GeForce GTX 1650 Ti - 4096 Мб</p>
+            <p>Объем SSD
+                512 Гб</p>
+            <p>Тип ODD
+                отсутствует</p>
+            <p>Операционная система
+                Eshell</p>
+            <p class="price price1" id="price1">76 990 ₽</p>
+            <a class="btn bg-dark" href="#" role="button" onclick="addToKorz(76990,'Zagolovok1')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok2">Ноутбук ACER Aspire 3 A315-23-R91S</p>
+            <img src="kat3.jpg" alt="" width="17%" class="imgKat rounded">
+           
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Диагональ экрана в дюймах: 15.6 "</p>
+            <p>Разрешение экрана
+                1920х1080</p>
+            <p>Процессор
+                AMD Ryzen 5 3500U</p> 
+            <p>Процессор, частота
+                2.1 ГГц (3.7 ГГц, в режиме Turbo)</p>
+            <p>Оперативная память
+                8192 Мб, DDR4</p>
+            <p>Графический процессор
+                AMD Radeon Vega 8</p> <img src="kat4.jpg" alt="" width="17%" class="imgKat rounded">
+            <p>Объем HDD
+                1000 Гб, 5400 об/мин</p>
+            <p>Тип ODD
+                отсутствует</p>
+            <p>Операционная система
+                Eshell</p>
+            <p class="price price1" id="price1">34 990 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok2" role="button" onclick="addToKorz(34990,'Zagolovok2')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok3">Монитор PHILIPS 243V7QDSB</p>
+            <img src="kat5.jpg" alt="" width="17%" class="imgKat rounded">
+           
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Размер экрана
+                23.8 "</p>
+            <p>Разрешение экрана
+                1920x1080</p>
+            <p>Соотношение сторон экрана
+                16:9</p> 
+            <p>Тип матрицы
+                IPS</p>
+            <p>Яркость экрана
+                250 кд/м2</p>
+            <p>Графический процессор
+                AMD Radeon Vega 8</p> 
+            <p>Объем HDD
+                1000 Гб, 5400 об/мин</p>
+            <p>Тип ODD
+                отсутствует</p>
+            <p>Операционная система
+                Eshell</p>
+            <p class="price price1" id="price1">10 990 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok3" role="button" onclick="addToKorz(10990,'Zagolovok3')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok4">Монитор игровой ASUS Gaming VA24EHE 23.8" черный</p>
+            <img src="kat6.jpg" alt="" width="17%" class="imgKat rounded">
+           <p>С помощью черного монитора ASUS VA24EHE окунуться в мир компьютерных игр не составит труда. Ведь у него широкая диагональ 23,8 дюйма и высокое разрешение 1920х1080 пикселей, благодаря чему картинка получается детализированной и четкой. Матрица выполнена по технологии IPS, отличающаяся быстрым временем отклика 5 мс, что положительно влияет на качество изображения в динамичных сценах.</p>
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Размер экрана
+                23.8 "</p>
+            <p>Разрешение экрана
+                1920x1080</p>
+            <p>Соотношение сторон экрана
+                16:9</p> 
+            <p>Тип матрицы
+                IPS</p>
+            <p>Яркость экрана
+                250 кд/м2</p>
+            <p>Графический процессор
+                AMD Radeon Vega 8</p> 
+            <p>Объем HDD
+                1000 Гб, 5400 об/мин</p>
+            <p>Тип ODD
+                отсутствует</p>
+            <p>Операционная система
+                Eshell</p>
+            <p class="price price1" id="price1">10 340 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok4" role="button" onclick="addToKorz(10340,'Zagolovok4')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok5">Гарнитура APPLE AirPods Pro, Bluetooth, вкладыши, белый</p>
+            <img src="kat7.jpg" alt="" width="17%" class="imgKat rounded">
+           <p>Наушники с микрофоном APPLE AirPods Pro — один из лучших вариантов для ежедневного использования. Легкие, удобные, практичные — в них есть все, что ждут от хорошей гарнитуры. <br>
+
+            Технология шумоподавления у AirPods Pro одна из самых продвинутых. Она блокирует окружающие звуки, оставляя только то, что нужно услышать и что не мешает восприятию музыки или разговора. Шумоподавление приспосабливается к форме уха, размерам гарнитуры и окружающей обстановке. Наушники помогут оставаться наедине с собеседником даже в переполненном автобусе.</p>
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Тип амбушюр
+                вкладыши</p>
+            <p>Тип соединения
+                беспроводные bluetooth</p> 
+            <p>Тип, акустический
+                закрытые</p> 
+            
+            <p class="price price1" id="price1">18 990 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok5" role="button" onclick="addToKorz(18990,'Zagolovok5')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok6">Гарнитура XIAOMI Mi True Wireless Earbuds Basic 2, Bluetooth, вкладыши, черный</p>
+            <img src="kat8.jpg" alt="" width="17%" class="imgKat rounded">
+           <p>Стерео и монорежим воспроизведения поддерживает беспроводная гарнитура Xiaomi Mi True Wireless Earbuds Basic 2. Во время использования одного наушника-вкладыша пользователь получает неограниченную свободу действий, а 2 наушника делают звук насыщеннее и объемнее. Эргономичность корпуса наушника позволяет ему комфортно располагаться в ушной раковине и надежно фиксироваться. А компактность и легкость до минимума снижают нагрузку при продолжительности использования.</p>
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Тип амбушюр
+                вкладыши</p>
+            <p>Тип соединения
+                беспроводные bluetooth</p> 
+            <p>Тип, акустический
+                закрытые</p> 
+            
+            <p class="price price1" id="price1">1380 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok6" role="button" onclick="addToKorz(1380,'Zagolovok6')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok7">Клавиатура OKLICK 969G SHOTGUN, USB, черный</p>
+            <img src="kat9.jpg" alt="" width="17%" class="imgKat rounded">
+           <p>Выполненная в Китае проводная игровая клавиатура OKLICK 969G SHOTGUN обладает гарантией в 12 месяцев. Ее вес составляет всего 625 грамм, а размеры равны 360х35х160 мм. В качестве основного материала для изготовления производитель выбрал металл, что сообщает клавиатуре дополнительную прочность и долговечность. Основной ее цвет черный.</p>
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Тип соединения
+                проводная</p>
+            <p>Интерфейс
+                USB</p> 
+            <p>Длина кабеля
+                1.5 м</p> 
+            <p>Механическая
+                да</p>
+            <p>Тип механических переключателей
+                Blue</p>
+            
+            <p class="price price1" id="price1">1890 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok7" role="button" onclick="addToKorz(1890,'Zagolovok7')">Добавить в корзину</a>
+          </div>
+
+          <div class="shadow-sm p-2 mb-3 rounded border wind">
+            <p class="Zagolovok" id="Zagolovok8">Клавиатура HYPERX Alloy FPS Pro CherryMX Red, USB, черный</p>
+            <img src="kat10.jpg" alt="" width="17%" class="imgKat rounded">
+           <p>Удобная и практичная клавиатура HYPERX Alloy FPS Pro CherryMX Red для геймеров имеет 87 клавиш. Она отличается наличием CHERRY MX Red и CHERRY MX Red RGB переключателей, которые делают ее работу максимально удобной и тактильно приятной. Светодиодных режимов 4, яркость можно устанавливать на одном из 6 уровней.</p>
+            <h4 class="text-left">Характеристики</h4>
+            
+            <p>Тип соединения
+                проводная</p>
+            <p>Интерфейс
+                USB</p> 
+            <p>Длина кабеля
+                1.5 м</p> 
+            <p>Механическая
+                да</p>
+            <p>Тип механических переключателей
+                Red</p>
+            
+            <p class="price price1" id="price1">7547 ₽</p>
+            <a class="btn bg-dark" href="#Zagolovok8" role="button" onclick="addToKorz(7547,'Zagolovok8')">Добавить в корзину</a>
+          </div>
+
+          
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>  
+        
+
+    </div>
+      
+</body>
+</html>
